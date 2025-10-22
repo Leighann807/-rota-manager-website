@@ -157,6 +157,71 @@
             font-weight: bold;
         }
 
+        .legal-sections {
+            background: white;
+            padding: 4rem 0;
+        }
+
+        .legal-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .legal-content h2 {
+            color: #667eea;
+            margin: 3rem 0 1rem 0;
+            font-size: 2rem;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+
+        .legal-content h3 {
+            color: #333;
+            margin: 2rem 0 1rem 0;
+            font-size: 1.3rem;
+        }
+
+        .legal-content p {
+            margin-bottom: 1rem;
+        }
+
+        .legal-content ul {
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        .legal-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .last-updated {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+
+        .highlight {
+            background: #f0f4ff;
+            padding: 1rem;
+            border-left: 4px solid #667eea;
+            margin: 1rem 0;
+        }
+
+        .nav {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .nav a:hover {
+            color: #667eea;
+        }
+
         footer {
             background: #333;
             color: white;
@@ -173,6 +238,10 @@
                 flex-direction: column;
                 gap: 1rem;
             }
+
+            .nav {
+                gap: 1rem;
+            }
         }
     </style>
 </head>
@@ -181,11 +250,16 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">📊 Rota Manager</div>
+                <nav class="nav">
+                    <a href="#home">Home</a>
+                    <a href="#privacy">Privacy</a>
+                    <a href="#terms">Terms</a>
+                </nav>
             </div>
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="container">
             <h1>Rota Manager</h1>
             <p>Streamline your shift scheduling with our powerful Google Sheets add-on</p>
@@ -255,6 +329,110 @@
                     <h3>Start Managing</h3>
                     <p>Access Rota Manager from the Extensions menu and begin creating your schedules</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="legal-sections" id="privacy">
+        <div class="legal-content">
+            <h2>Privacy Policy</h2>
+            <p class="last-updated">Last Updated: October 22, 2024</p>
+
+            <h3>Overview</h3>
+            <p>At Rota Manager, we take your privacy seriously. This Privacy Policy explains how our Google Sheets™ add-on works with your data. Rota Manager is designed to operate entirely within your Google™ account environment, with minimal data collection by us. We are committed to transparency about how the add-on interacts with your information.</p>
+
+            <div class="highlight">
+                <p><strong>Important:</strong> Rota Manager operates entirely within your Google™ account. Your scheduling data, employee information, and shift records remain stored exclusively in your Google™ account, not on our servers.</p>
+            </div>
+
+            <h3>Rota Manager's Add-On Structure</h3>
+            <p><strong>Add-on Architecture:</strong> Rota Manager is a Google Sheets™ add-on that operates entirely within your Google™ account. It creates and manages spreadsheets for employee scheduling, shift management, and workforce planning within your own Google™ environment.</p>
+
+            <p><strong>Your Data Stays in Google™:</strong> All scheduling information, employee data, shift records, and other content you create using Rota Manager remains stored exclusively in your Google™ account, not on our servers.</p>
+
+            <p><strong>Google™ Permissions:</strong> To function, Rota Manager requests specific permissions to access Google™ services (Sheets™, Drive™) through Google's™ secure OAuth system.</p>
+
+            <h3>Data Access & Usage</h3>
+            <p>Through the Google™ permissions you grant, Rota Manager can access:</p>
+            <ul>
+                <li><strong>Google Sheets™:</strong> To create and manage your employee schedules, shift patterns, availability records, and workforce reports.</li>
+                <li><strong>Google Drive™:</strong> To organize scheduling folders and store generated reports and documents.</li>
+            </ul>
+
+            <p>This access occurs through Google's™ secure API system. We do not extract, copy, or store this data on our own servers.</p>
+
+            <div class="highlight">
+                <p><strong>Important:</strong> We do not sell, rent, or transfer your Google™ user data to third parties. Your data is used exclusively to provide you with Rota Manager's services.</p>
+            </div>
+
+            <h3>Security Measures</h3>
+            <ul>
+                <li><strong>Google's™ Security:</strong> Your data benefits from Google's™ enterprise-grade security as it remains within your Google™ account.</li>
+                <li><strong>OAuth 2.0:</strong> We use industry-standard OAuth 2.0 for secure authentication with Google™ services.</li>
+                <li><strong>No External Storage:</strong> Since your employee and scheduling data remains in your Google™ account, we don't face the security risks associated with storing this sensitive information.</li>
+            </ul>
+
+            <h3>Your Rights & Choices</h3>
+            <ul>
+                <li><strong>Revoke Access:</strong> You can revoke Rota Manager's access to your Google™ account at any time through your Google™ Account settings.</li>
+                <li><strong>Data Ownership:</strong> You retain full ownership and control of all data created and managed through Rota Manager.</li>
+                <li><strong>GDPR Compliance:</strong> For EU users, we comply with GDPR requirements for the limited personal data we collect.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="legal-sections" id="terms">
+        <div class="legal-content">
+            <h2>Terms & Conditions</h2>
+            <p class="last-updated">Last Updated: October 22, 2024</p>
+
+            <h3>Introduction</h3>
+            <p>Welcome to Rota Manager! These Terms & Conditions outline the rules and regulations for using our Google Sheets™ add-on service. By accessing or using Rota Manager, you acknowledge that you have read, understood, and agree to be bound by these terms.</p>
+
+            <h3>Service Description</h3>
+            <ul>
+                <li><strong>Free Service:</strong> Rota Manager is currently provided as a free Google Sheets™ add-on for workforce scheduling and management.</li>
+                <li><strong>Functionality:</strong> The add-on helps you create employee schedules, manage shift patterns, track availability, and generate workforce reports.</li>
+                <li><strong>No Payment Required:</strong> Currently, no subscription or payment is required to use Rota Manager.</li>
+            </ul>
+
+            <h3>Usage Guidelines</h3>
+            <ul>
+                <li>You may not resell, modify, or distribute Rota Manager software.</li>
+                <li>You must use the service lawfully and not for fraudulent purposes.</li>
+                <li>Each installation is for a single business entity or personal use.</li>
+                <li>You are responsible for maintaining the confidentiality of your Google™ account credentials.</li>
+                <li>You must comply with all applicable employment laws and regulations when using Rota Manager for workforce scheduling.</li>
+            </ul>
+
+            <h3>Data & Storage</h3>
+            <div class="highlight">
+                <p><strong>Important:</strong> Rota Manager stores your employee schedules, shift information, and workforce data within your Google Workspace™ account (Google Drive™, Sheets™).</p>
+            </div>
+            <ul>
+                <li>We do not store or access your scheduling data beyond necessary technical operations.</li>
+                <li>You are responsible for complying with data protection laws regarding the employee data you store in Rota Manager.</li>
+                <li>You retain full ownership and control of all data created through Rota Manager.</li>
+            </ul>
+
+            <h3>Google™ Integration</h3>
+            <ul>
+                <li>Rota Manager integrates with Google™ services using OAuth 2.0 for secure access. A standard Google™ account is sufficient—you do not need a paid Google Workspace™ subscription.</li>
+                <li>We request permissions to access Google Sheets™ (to create schedules and reports) and Google Drive™ (to store documents and organize folders).</li>
+                <li>You can revoke Rota Manager's access to your Google™ account at any time through your Google™ Account settings.</li>
+                <li>Rota Manager is not created by, affiliated with, or supported by Google™ Inc.</li>
+            </ul>
+
+            <h3>Liability & Warranty Disclaimer</h3>
+            <ul>
+                <li>Rota Manager is provided "as is," with no guarantees of uninterrupted service.</li>
+                <li>We are not responsible for losses resulting from incorrect schedules, data errors, or employment disputes.</li>
+                <li>Our liability is limited to the greatest extent permitted by law.</li>
+                <li>You are solely responsible for ensuring compliance with employment laws and regulations in your jurisdiction.</li>
+            </ul>
+
+            <div class="highlight">
+                <p><strong>By using Rota Manager, you acknowledge that you have read, understood, and agree to be bound by these Terms & Conditions.</strong></p>
             </div>
         </div>
     </section>
